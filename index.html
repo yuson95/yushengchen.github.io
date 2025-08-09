@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yusheng Chen · Personal Site</title>
+  <meta name="description" content="Energy Systems · Decarbonization · Optimization" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind for layout utilities -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Your deep-blue (less purple) glass theme -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-deep text-white font-[Inter]">
+  <!-- Top Nav -->
+  <header class="fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto max-w-6xl px-4">
+      <nav class="mt-4 flex items-center justify-between rounded-2xl glass px-4 py-3 ring-1 ring-white/10">
+        <a href="#home" class="text-sm font-semibold tracking-wider uppercase opacity-80 hover:opacity-100" id="brand">Yusheng Chen</a>
+        <div class="flex items-center gap-4">
+          <ul class="hidden md:flex items-center gap-6 text-sm opacity-80">
+            <li><a href="#about" class="hover:opacity-100" data-i18n="nav.about">About</a></li>
+            <li><a href="#experience" class="hover:opacity-100" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#education" class="hover:opacity-100" data-i18n="nav.education">Education</a></li>
+            <li><a href="#skills" class="hover:opacity-100" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#engagement" class="hover:opacity-100" data-i18n="nav.engagement">Engagement</a></li>
+            <li><a href="#contact" class="hover:opacity-100" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+          <div class="flex gap-2 text-xs">
+            <button class="langbtn" data-setlang="zh">中文</button>
+            <button class="langbtn" data-setlang="en">EN</button>
+            <button class="langbtn" data-setlang="de">DE</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative min-h-screen overflow-hidden pt-28">
+    <!-- Deep blue blobs + grid -->
+    <div class="pointer-events-none absolute inset-0">
+      <div class="hero-blob"></div>
+      <svg class="absolute inset-0 h-full w-full opacity-[0.07]" xmlns="http://www.w3.org/2000/svg">
+        <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/></pattern></defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/>
+      </svg>
+    </div>
+    <div class="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 py-24 md:grid-cols-2">
+      <div>
+        <p class="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-xs tracking-wider"># Decarbonization · Energy Systems · Optimization</p>
+        <h1 class="text-4xl font-extrabold leading-tight md:text-6xl">
+          <span id="name">Yusheng Chen</span> —
+          <span class="bg-clip-text text-transparent gradient-text">Dr.-Ing.</span>
+        </h1>
+        <p class="mt-4 max-w-xl text-white/80" id="hero-line"></p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#experience" class="btn-primary" data-i18n="cta.viewExp">View Experience</a>
+          <a href="#contact" class="btn-ghost" data-i18n="cta.contact">Contact</a>
+          <!-- 👉 替换：不再直链下载 CV，改为邮件索取 -->
+          <a id="cv-request" class="btn-ghost" href="mailto:yusheng.chen@outlook.com?subject=CV%20Request%20from%20Website&body=Hi%20Yusheng%2C%0A%0AI%27d%20like%20to%20request%20your%20CV.%20Thanks!" data-i18n="cta.cvReq">Request CV</a>
+        </div>
+      </div>
+      <div class="floaty">
+        <div class="mx-auto aspect-square w-72 rounded-[2rem] gradient-frame p-1 md:w-96">
+          <div class="glass flex h-full items-center justify-center rounded-[1.8rem] ring-1 ring-white/10">
+            <img src="assets/avatar.jpg" alt="Avatar" class="h-40 w-40 rounded-2xl object-cover opacity-90"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="relative py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="mb-6 text-2xl font-bold" data-i18n="sec.about">About</h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="md:col-span-2 space-y-4">
+          <p class="text-white/80" id="about-text"></p>
+        </div>
+        <ul class="space-y-3 text-white/80 text-sm" id="about-basics"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="relative py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="mb-8 flex items-end justify-between">
+        <h2 class="text-2xl font-bold" data-i18n="sec.experience">Experience</h2>
+        <a href="#contact" class="text-sm text-white/70 hover:text-white" data-i18n="misc.openTo">Open to collaboration → Contact</a>
+      </div>
+      <div id="exp-wrap" class="space-y-6"></div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="relative py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="mb-8 text-2xl font-bold" data-i18n="sec.education">Education</h2>
+      <div id="edu-wrap" class="grid gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="relative py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="mb-6 text-2xl font-bold" data-i18n="sec.skills">Skills</h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3 text-sm">
+        <div class="card"><h4 class="card-title" data-i18n="skills.expertise">Expertise</h4><ul class="space-y-1 text-white/80" id="skills-exp"></ul></div>
+        <div class="card"><h4 class="card-title" data-i18n="skills.software">Software / Coding</h4><p class="text-white/80" id="skills-soft"></p></div>
+        <div class="card"><h4 class="card-title" data-i18n="skills.languages">Languages</h4><p class="text-white/80" id="skills-lang"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement -->
+  <section id="engagement" class="relative py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="mb-6 text-2xl font-bold" data-i18n="sec.engagement">Engagement</h2>
+      <div id="eng-wrap" class="grid gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="rounded-3xl glass p-8 ring-1 ring-white/10">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+          <div>
+            <h2 class="text-2xl font-bold" data-i18n="sec.contact">Contact</h2>
+            <p class="mt-2 max-w-xl text-white/80" id="contact-text"></p>
+          </div>
+          <div class="flex flex-wrap gap-3 text-sm">
+            <a id="mailto" href="#" class="btn-primary">Email</a>
+            <a id="github" href="#" target="_blank" class="btn-ghost">GitHub Repo</a>
+            <a id="linkedin" href="#" target="_blank" class="btn-ghost">LinkedIn</a>
+            <!-- 不再提供 CV 文件直链 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-xs text-white/60">
+    © <span id="year"></span> <span id="foot-name">Yusheng Chen</span> · Glass UI · GitHub Pages
+  </footer>
+
+  <!-- Fallback JSON (optional; can leave empty) -->
+  <script id="profile-default" type="application/json"></script>
+
+  <!-- App script -->
+  <script>
+    // i18n labels
+    const i18n = {
+      en:{nav:{about:'About',experience:'Experience',education:'Education',skills:'Skills',engagement:'Engagement',contact:'Contact'},
+          cta:{viewExp:'View Experience',contact:'Contact',cvReq:'Request CV'},
+          sec:{about:'About',experience:'Experience',education:'Education',skills:'Skills',engagement:'Engagement',contact:'Contact'},
+          skills:{expertise:'Expertise',software:'Software / Coding',languages:'Languages'},
+          misc:{openTo:'Open to collaboration → Contact'},
+          contactText:'Prefer email for first contact. Open to collaborations on decarbonization, energy system modeling and optimization.'},
+      de:{nav:{about:'Über mich',experience:'Berufserfahrung',education:'Ausbildung',skills:'Kompetenzen',engagement:'Engagement',contact:'Kontakt'},
+          cta:{viewExp:'Zur Erfahrung',contact:'Kontakt',cvReq:'Lebenslauf anfragen'},
+          sec:{about:'Über mich',experience:'Berufserfahrung',education:'Ausbildung',skills:'Kompetenzen',engagement:'Engagement',contact:'Kontakt'},
+          skills:{expertise:'Fachgebiete',software:'Software / Programmierung',languages:'Sprachen'},
+          misc:{openTo:'Offen für Kooperationen → Kontakt'},
+          contactText:'Bitte zuerst per E-Mail kontaktieren. Offen für Kooperationen zu Dekarbonisierung sowie Modellierung und Optimierung von Energiesystemen.'},
+      zh:{nav:{about:'关于我',experience:'经历',education:'教育',skills:'技能',engagement:'社会参与',contact:'联系'},
+          cta:{viewExp:'查看经历',contact:'联系我',cvReq:'索取简历'},
+          sec:{about:'关于我',experience:'经历',education:'教育',skills:'技能',engagement:'社会参与',contact:'联系'},
+          skills:{expertise:'专业领域',software:'软件 / 编程',languages:'语言'},
+          misc:{openTo:'接受合作 → 联系我'},
+          contactText:'欢迎先邮件联系，合作方向包括脱碳、能源系统建模与优化等。'}
+    };
+
+    const $ = s => document.querySelector(s);
+    const el = (t,c) => { const n=document.createElement(t); if(c) n.className=c; return n; };
+    const safe = (v,f='') => v==null?f:v;
+
+    let P=null, lang='en';
+
+    function applyI18n(){
+      const t = i18n[lang];
+      document.querySelectorAll('[data-i18n]').forEach(node=>{
+        const key = node.getAttribute('data-i18n').split('.');
+        let val = t; key.forEach(k=> val = val && val[k]);
+        if(val) node.textContent = val;
+      });
+      $('#contact-text').textContent = t.contactText;
+    }
+
+    function render(){
+      if(!P) return;
+
+      // top/bottom
+      $('#brand').textContent = safe(P.name,'Your Name');
+      $('#name').textContent = safe(P.name,'Your Name');
+      $('#foot-name').textContent = safe(P.name,'Your Name');
+      $('#hero-line').textContent = safe(P.hero?.[lang], '');
+
+      // about
+      $('#about-text').textContent = safe(P.about?.[lang], '');
+      const basics = $('#about-basics'); basics.innerHTML='';
+      [ `📍 ${safe(P.location,'')}`,
+        `🎂 ${safe(P.birthday,'')}`,
+        `✉️ ${safe(P.email,'')}`,
+        safe(P.about?.languages?.[lang],'')
+      ].filter(Boolean).forEach(x=>{ const li=el('li'); li.textContent=x; basics.appendChild(li); });
+
+      // EXPERIENCE (company + position all i18n-ready)
+      const exp = $('#exp-wrap'); exp.innerHTML = '';
+      (P.experience||[]).forEach(e=>{
+        const card = el('div','card');
+        const comp = safe(e.company?.[lang] || e.company?.en, '');
+        const pos  = safe(e.position?.[lang] || e.position?.en, '');
+        card.innerHTML = `
+          <div class="flex items-baseline justify-between gap-4 flex-wrap">
+            <h3 class="text-lg font-semibold">${comp}${(comp && pos)?' — ':''}${pos}</h3>
+            <span class="text-sm text-white/70">${safe(e.period,'')}</span>
+          </div>`;
+        const ul = el('ul','list-disc ps-5 text-white/80 text-sm mt-3');
+        (e[lang]||[]).forEach(line=>{ const li=el('li'); li.textContent=line; ul.appendChild(li); });
+        card.appendChild(ul); exp.appendChild(card);
+      });
+
+      // EDUCATION (school + degree all i18n-ready)
+      const edu = $('#edu-wrap'); edu.innerHTML = '';
+      (P.education||[]).forEach(ed=>{
+        const card = el('div','card');
+        const school = safe(ed.school?.[lang] || ed.school?.en, '');
+        const degree = safe(ed.degree?.[lang] || ed.degree?.en, '');
+        card.innerHTML = `
+          <div class="flex items-baseline justify-between gap-4 flex-wrap">
+            <h3 class="text-lg font-semibold">${school}${(school && degree)?' — ':''}${degree}</h3>
+            <span class="text-sm text-white/70">${safe(ed.period,'')}</span>
+          </div>`;
+        const p = el('p','text-white/80 text-sm mt-2'); p.textContent = safe(ed[lang],''); card.appendChild(p);
+        edu.appendChild(card);
+      });
+
+      // SKILLS
+      const ulExp = $('#skills-exp'); ulExp.innerHTML='';
+      (P.skills?.expertise?.[lang]||[]).forEach(s=>{ const li=el('li'); li.textContent=s; ulExp.appendChild(li); });
+      $('#skills-soft').textContent = safe(P.skills?.software?.[lang],'');
+      $('#skills-lang').textContent = safe(P.skills?.languages?.[lang],'');
+
+      // ENGAGEMENT
+      const eng = $('#eng-wrap'); eng.innerHTML='';
+      (P.engagement||[]).forEach(g=>{
+        const card = el('div','card');
+        card.innerHTML = `
+          <div class="flex items-baseline justify-between gap-4 flex-wrap">
+            <h3 class="text-lg font-semibold">${safe(g.title,'')}</h3>
+            <span class="text-sm text-white/70">${safe(g.period,'')}</span>
+          </div>`;
+        const p = el('p','text-white/80 text-sm mt-2'); p.textContent = safe(g[lang],''); card.appendChild(p);
+        eng.appendChild(card);
+      });
+
+      // CONTACT LINKS
+      $('#mailto').href = `mailto:${safe(P.email,'')}`;
+      $('#github').href = safe(P.links?.github,'#');
+      $('#linkedin').href = safe(P.links?.linkedin,'#');
+
+      // YEAR
+      document.getElementById('year').textContent = new Date().getFullYear();
+    }
+
+    function setLang(l){ lang = ['en','de','zh'].includes(l)? l : 'en'; applyI18n(); render(); }
+
+    // Bind language buttons
+    window.addEventListener('DOMContentLoaded', ()=>{
+      document.querySelectorAll('.langbtn').forEach(b=> b.addEventListener('click', ()=> setLang(b.dataset.setlang)));
+    });
+
+    // Init: fetch JSON with cache-busting; fallback to inline JSON if provided
+    (async function init(){
+      try{
+        const res = await fetch('./data/profile.json?v=1', {cache:'no-store'});
+        if(!res.ok) throw new Error('fetch profile.json HTTP '+res.status);
+        P = await res.json();
+      }catch(err){
+        console.warn('Failed to load profile.json:', err);
+        try{ P = JSON.parse(document.getElementById('profile-default').textContent || '{}'); }catch{ P = {}; }
+      }
+      const guess = navigator.language?.toLowerCase().startsWith('de') ? 'de'
+                   : (navigator.language?.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+      setLang(guess);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* Blue-leaning glass theme (less purple) */
+:root{
+  --deep-start:#0b1020;   /* dark base */
+  --blob-1:#0e1a3a;       /* deep navy */
+  --blob-2:#1a3e8a;       /* blue */
+  --blob-3:#3b82f6;       /* accent blue */
+
+  --fg:#ffffff;
+  --fg-dim:rgba(255,255,255,.82);
+  --ring:rgba(255,255,255,.1);
+
+  --card-bg:rgba(255,255,255,.06);
+  --card-border:rgba(255,255,255,.12);
+
+  --btn-bg:#ffffff;
+  --btn-fg:#0b1020;
+
+  --ghost-ring:rgba(255,255,255,.4);
+}
+
+html { scroll-behavior: smooth; }
+.bg-deep{ background: var(--deep-start); color: var(--fg); }
+.glass{ background: rgba(255,255,255,.06); backdrop-filter: blur(10px); }
+
+.hero-blob{
+  position:absolute; left:50%; top:-160px;
+  width:1400px; height:700px; transform:translateX(-50%);
+  border-radius:999px;
+  background: radial-gradient(70% 70% at 50% 30%, var(--blob-3) 0%, transparent 60%),
+              radial-gradient(70% 70% at 20% 60%, var(--blob-2) 0%, transparent 60%),
+              radial-gradient(70% 70% at 80% 50%, var(--blob-1) 0%, transparent 60%);
+  opacity:.24; filter: blur(42px);
+}
+
+.gradient-frame{ background: linear-gradient(135deg, rgba(59,130,246,.35), rgba(26,62,138,.35)); border-radius:2rem; }
+.gradient-text{ background-image: linear-gradient(90deg, #93c5fd, #bfdbfe); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+@keyframes floaty { 0% {transform: translateY(0)} 50% {transform: translateY(-6px)} 100% {transform: translateY(0)} }
+.floaty { animation: floaty 6s ease-in-out infinite; }
+
+.card{ border:1px solid var(--card-border); border-radius:16px; padding:16px; background: var(--card-bg); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+
+.btn-primary{ display:inline-block; padding:.5rem 1rem; border-radius:.75rem; background: var(--btn-bg); color: var(--btn-fg); text-decoration:none; }
+.btn-ghost{ display:inline-block; padding:.5rem 1rem; border-radius:.75rem; border:1px solid var(--ghost-ring); color:#fff; text-decoration:none; }
+
+.langbtn{ border:1px solid var(--ghost-ring); padding:.35rem .6rem; border-radius:.6rem; color:#fff; background: transparent; }
+.card-title{ font-weight:600; margin-bottom:.25rem; }

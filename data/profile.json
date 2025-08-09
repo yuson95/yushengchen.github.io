@@ -1,0 +1,256 @@
+{
+  "name": "Yusheng Chen",
+  "location": "Berlin, DE",
+  "birthday": "01 Feb 1995",
+  "email": "yusheng.chen@outlook.com",
+  "links": {
+    "github": "https://github.com/yuson95/yuson95.github.io",
+    "linkedin": "https://www.linkedin.com/in/yusheng-chen-b112b6152/"
+  },
+
+  "hero": {
+    "en": "Energy systems engineer & consultant in Berlin, specializing in decarbonization and renewable integration. Experienced in modeling, mathematical optimization, and project management.",
+    "de": "Energiesystemingenieur und Berater in Berlin mit Fokus auf Dekarbonisierung und Integration erneuerbarer Energien. Erfahren in Modellierung, mathematischer Optimierung und Projektmanagement.",
+    "zh": "常驻柏林的能源系统工程师与顾问，专长于脱碳与可再生能源集成；擅长建模、数学优化与项目管理。"
+  },
+
+  "about": {
+    "en": "Experienced energy systems engineer and consultant with a strong academic background and practical expertise in decarbonization and renewable integration. Skilled in energy system modeling and optimization.",
+    "de": "Erfahrener Ingenieur und Berater im Bereich Energiesysteme mit exzellentem akademischem Hintergrund und Praxis in Dekarbonisierung und EE-Integration. Schwerpunkt: Modellierung und Optimierung von Energiesystemen.",
+    "zh": "具备扎实学术训练与产业实践，长期聚焦脱碳与可再生能源集成，熟悉能源系统建模与优化，兼具项目管理经验。",
+    "languages": {
+      "en": "Languages: Chinese (native), German & English (business fluent)",
+      "de": "Sprachen: Chinesisch (Muttersprache), Deutsch & Englisch (verhandlungssicher)",
+      "zh": "语言：中文（母语）、德语/英语（商务熟练）"
+    }
+  },
+
+  "experience": [
+    {
+      "company": {
+        "en": "BFE Institute for Energy and Environment GmbH (MVV solution house)",
+        "de": "BFE Institut für Energie und Umwelt GmbH (MVV Lösungshaus)",
+        "zh": "BFE能源与环境研究所有限公司（MVV解决方案）"
+      },
+      "position": {
+        "en": "Consultant Energy Efficiency",
+        "de": "Berater Energieeffizienz",
+        "zh": "能源效率顾问"
+      },
+      "period": "04/2023 — Present · Berlin, DE",
+      "en": [
+        "Spearheading innovative energy supply concepts focused on decarbonization.",
+        "Managing transformation plans and developing decarbonization strategies for industrial & commercial clients.",
+        "Analyzing and optimizing energy systems for efficiency, cost and sustainability.",
+        "Driving implementation with federal and state funding programs."
+      ],
+      "de": [
+        "Ansprechpartner für innovative Energieversorgungskonzepte mit Fokus auf Dekarbonisierung.",
+        "Leitung von Transformationsplänen und Entwicklung von Dekarbonisierungsstrategien.",
+        "Analysen und Optimierungen hinsichtlich Effizienz, Kosten und Nachhaltigkeit.",
+        "Umsetzungsbegleitung unter Einbindung von Fördermitteln."
+      ],
+      "zh": [
+        "牵头面向脱碳的创新能源供给方案；",
+        "为工商业客户制定与推进转型/脱碳战略；",
+        "从效率、成本、可持续性维度优化能源系统；",
+        "结合联邦/州级资助推动落地实施。"
+      ]
+    },
+    {
+      "company": {
+        "en": "Technical University of Munich",
+        "de": "Technische Universität München",
+        "zh": "慕尼黑工业大学"
+      },
+      "position": {
+        "en": "Research Associate (Chair of Regenerative Energy Systems)",
+        "de": "Wissenschaftlicher Mitarbeiter (Lehrstuhl für Regenerative Energiesysteme)",
+        "zh": "科研助理（可再生能源系统教研组）"
+      },
+      "period": "06/2020 — 03/2023 · Straubing, DE",
+      "en": [
+        "Led “BioKond”: integration of heat pumps and CHP via genetic algorithms.",
+        "Contributed to “BioDyNahMo”: intelligent control with long-term heat storage for market participation.",
+        "Lectures/exercises: Energy Conversion Systems; Energy Storage Technologies."
+      ],
+      "de": [
+        "Leitung „BioKond“: Integration von Wärmepumpen und KWK mit genetischen Algorithmen.",
+        "Mitwirkung „BioDyNahMo“: Intelligente Steuerung mit Langzeitspeicher für Strommarktteilnahme.",
+        "Lehre/Übungen: Energieumwandlungssysteme; Energiespeichertechnologien."
+      ],
+      "zh": [
+        "负责“BioKond”：以遗传算法优化热泵与CHP耦合；",
+        "参与“BioDyNahMo”：长时储热条件下的智能控制与电力市场参与；",
+        "授课/习题：《能源转换系统》《储能技术》。"
+      ]
+    },
+    {
+      "company": {
+        "en": "Berliner Energiemanagement GmbH",
+        "de": "Berliner Energiemanagement GmbH",
+        "zh": "柏林能源管理有限公司"
+      },
+      "position": {
+        "en": "Energy Manager",
+        "de": "Energiemanager",
+        "zh": "能源经理"
+      },
+      "period": "06/2019 — 05/2020 · Berlin, DE",
+      "en": [
+        "Initiated partnerships with energy startups to foster innovation.",
+        "Designed energy systems for public assets incl. police buildings & “Haus der Statistik”.",
+        "Managed CHP rollout and intelligent room-temperature control systems."
+      ],
+      "de": [
+        "Kooperationen mit Start-ups zur Förderung von Innovationen initiiert.",
+        "Energiesysteme für landeseigene Liegenschaften (u. a. Polizeibauten, „Haus der Statistik“) konzipiert.",
+        "BHKW-Roll-out und intelligente Einzelraumregelung verantwortet."
+      ],
+      "zh": [
+        "牵头与能源初创企业合作；",
+        "为公共资产（含警用建筑、统计之家）规划能源系统；",
+        "推进CHP部署与智能室温控制。"
+      ]
+    },
+    {
+      "company": {
+        "en": "Shanghai Nengjiao Network Technology Ltd.",
+        "de": "Shanghai Nengjiao Network Technology Ltd.",
+        "zh": "上海能交网络科技有限公司"
+      },
+      "position": {
+        "en": "Product & Project Manager (Part-time)",
+        "de": "Produkt- & Projektmanager (Teilzeit)",
+        "zh": "产品与项目经理（兼职）"
+      },
+      "period": "10/2016 — 02/2019 · Remote",
+      "en": [
+        "Developed software to optimize decentralized energy systems.",
+        "Consulting on integrated energy supply concepts.",
+        "Produced reports and strategies for industrial partners."
+      ],
+      "de": [
+        "Software zur Optimierung dezentraler Energiesysteme entwickelt.",
+        "Beratung zu integrierten Energieversorgungskonzepten.",
+        "Berichte und Strategien für Industriepartner erstellt."
+      ],
+      "zh": [
+        "研发分布式能源系统优化软件；",
+        "提供综合能源供给方案咨询；",
+        "输出企业报告与实施策略。"
+      ]
+    },
+    {
+      "company": {
+        "en": "Forschungszentrum Jülich, IEK-3",
+        "de": "Forschungszentrum Jülich, IEK-3",
+        "zh": "于利希研究中心 IEK-3"
+      },
+      "position": {
+        "en": "Research Assistant & Master Student",
+        "de": "Wissenschaftliche Hilfskraft & Masterstudent",
+        "zh": "科研助理 & 硕士生"
+      },
+      "period": "04/2018 — 01/2019 · Jülich, DE",
+      "en": [
+        "Optimized hydrogen supply chain; designed refueling station concepts.",
+        "Techno-economic and well-to-wheel analyses under policy scenarios."
+      ],
+      "de": [
+        "Optimierung der Wasserstoffversorgungskette; H2-Tankstellenkonzepte.",
+        "Techno-ökonomische und WTW-Analysen unter Politikszenarien."
+      ],
+      "zh": [
+        "开展氢能供应链优化与加氢站方案设计；",
+        "在不同政策情景下进行技术经济与 WTW 评估。"
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "school": {
+        "en": "Technical University of Munich",
+        "de": "Technische Universität München",
+        "zh": "慕尼黑工业大学"
+      },
+      "degree": {
+        "en": "Dr.-Ing., Renewable Energy Systems",
+        "de": "Dr.-Ing., Regenerative Energiesysteme",
+        "zh": "工学博士（可再生能源系统）"
+      },
+      "period": "06/2020 — 10/2024 · Garching/Straubing, DE",
+      "en": "Thesis: Optimization of biomass heating networks via integration of heat pumps and onsite power generation.",
+      "de": "Dissertation: Optimierung von Biomasse-Wärmenetzen durch Integration von Wärmepumpen und Eigenstromerzeugung.",
+      "zh": "论文：通过集成热泵与自发电优化生物质供热网络。"
+    },
+    {
+      "school": {
+        "en": "RWTH Aachen University",
+        "de": "Rheinisch-Westfälische Technische Hochschule Aachen (RWTH)",
+        "zh": "亚琛工业大学（RWTH）"
+      },
+      "degree": {
+        "en": "M.Sc., Sustainable Energy Supply (Dean’s List)",
+        "de": "M.Sc., Nachhaltige Energieversorgung (Dean’s List)",
+        "zh": "硕士， 可持续能源供给（院长优秀毕业生名单）"
+      },
+      "period": "10/2016 — 10/2018 · Aachen, DE",
+      "en": "Focus: energy systems, renewable integration, storage, sector coupling; Honors: Dean’s List, Deutschlandstipendium.",
+      "de": "Schwerpunkte: Energiesysteme, EE-Integration, Speicher, Sektorenkopplung; Auszeichnungen: Dean’s List, Deutschlandstipendium.",
+      "zh": "方向：能源系统、可再生能源集成、储能、部门耦合；荣誉：院长名单、德国奖学金。"
+    },
+    {
+      "school": {
+        "en": "Tongji University & FH Münster – University of Applied Sciences",
+        "de": "Tongji-Universität & FH Münster – University of Applied Sciences",
+        "zh": "同济大学 & 明斯特应用技术大学"
+      },
+      "degree": {
+        "en": "B.Eng., Building Services Engineering (Honors)",
+        "de": "B.Eng., Gebäudetechnik (mit Auszeichnung)",
+        "zh": "工学学士，建筑环境与能源应用工程（荣誉毕业）"
+      },
+      "period": "09/2012 — 08/2016 · Shanghai, CN & Münster, DE",
+      "en": "Focus: building energy systems, automation, energy management; Honors: Outstanding Graduate, National Scholarship of China, CSC Scholarship.",
+      "de": "Schwerpunkte: Gebäudeenergiesysteme, Automation, Energiemanagement; Auszeichnungen: Ausgezeichneter Absolvent, Nationalstipendium China, CSC-Stipendium.",
+      "zh": "方向：建筑能源系统、楼宇自动化、能源管理；荣誉：优秀毕业生、国家奖学金、国家留基委奖学金。"
+    }
+  ],
+
+  "skills": {
+    "expertise": {
+      "en": ["Energy system modeling & optimization", "Mathematical/metaheuristic optimization", "Energy management & decarbonization", "Data analysis", "Project management"],
+      "de": ["Modellierung & Optimierung von Energiesystemen", "Mathematische/metaheuristische Optimierung", "Energiemanagement & Dekarbonisierung", "Datenanalyse", "Projektmanagement"],
+      "zh": ["能源系统建模与优化", "数学/元启发式优化", "能源管理与脱碳", "数据分析", "项目管理"]
+    },
+    "software": {
+      "en": "Office: Microsoft Office (Word, Excel, PowerPoint, VBA). Programming: Python, MATLAB, SQL. Engineering: AutoCAD, SketchUp. Simulation: TRNSYS, FINE, TOP-Energy, nPro.",
+      "de": "Office: Microsoft Office (Word, Excel, PowerPoint, VBA). Programmierung: Python, MATLAB, SQL. Engineering: AutoCAD, SketchUp. Simulation: TRNSYS, FINE, TOP-Energy, nPro.",
+      "zh": "Office：Microsoft Office（Word/Excel/PowerPoint/VBA）；编程：Python、MATLAB、SQL；工程：AutoCAD、SketchUp；仿真：TRNSYS、FINE、TOP-Energy、nPro。"
+    },
+    "languages": {
+      "en": "Chinese (native), German & English (business fluent)",
+      "de": "Chinesisch (Muttersprache), Deutsch & Englisch (verhandlungssicher)",
+      "zh": "中文（母语）、德语/英语（商务熟练）"
+    }
+  },
+
+  "engagement": [
+    {
+      "title": "CINB — Board Member",
+      "period": "10/2021 — Present",
+      "en": "Association of Chinese Engineers for Sustainable Building.",
+      "de": "Verein der chinesischen Ingenieure für nachhaltiges Bauen.",
+      "zh": "中国工程师可持续建筑协会理事。"
+    },
+    {
+      "title": "CEED — Member",
+      "period": "10/2016 — Present",
+      "en": "Chinese Association for Renewable Energy in Germany.",
+      "de": "Chinesischer Verein für erneuerbare Energien in Deutschland.",
+      "zh": "德国华人可再生能源协会成员。"
+    }
+  ]
+}
